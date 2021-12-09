@@ -34,8 +34,14 @@ namespace CircodeAppsTDS06
             this.lblPedraPapelTesoura = new System.Windows.Forms.Label();
             this.pbxJogo = new System.Windows.Forms.PictureBox();
             this.pbxCEP = new System.Windows.Forms.PictureBox();
+            this.pbxIMC = new System.Windows.Forms.PictureBox();
+            this.lblIMC = new System.Windows.Forms.Label();
+            this.pbxGasolina = new System.Windows.Forms.PictureBox();
+            this.lblConsumo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbxJogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCEP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxIMC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxGasolina)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCEP
@@ -93,12 +99,58 @@ namespace CircodeAppsTDS06
             this.pbxCEP.TabStop = false;
             this.pbxCEP.Click += new System.EventHandler(this.pbxCEP_Click);
             // 
+            // pbxIMC
+            // 
+            this.pbxIMC.Image = global::CircodeAppsTDS06.Properties.Resources.imc;
+            this.pbxIMC.Location = new System.Drawing.Point(353, 12);
+            this.pbxIMC.Name = "pbxIMC";
+            this.pbxIMC.Size = new System.Drawing.Size(143, 141);
+            this.pbxIMC.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxIMC.TabIndex = 6;
+            this.pbxIMC.TabStop = false;
+            this.pbxIMC.Click += new System.EventHandler(this.pbxIMC_Click);
+            // 
+            // lblIMC
+            // 
+            this.lblIMC.AutoSize = true;
+            this.lblIMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIMC.Location = new System.Drawing.Point(365, 156);
+            this.lblIMC.Name = "lblIMC";
+            this.lblIMC.Size = new System.Drawing.Size(118, 13);
+            this.lblIMC.TabIndex = 5;
+            this.lblIMC.Text = "Calculadora de IMC";
+            // 
+            // pbxGasolina
+            // 
+            this.pbxGasolina.Image = global::CircodeAppsTDS06.Properties.Resources.gas;
+            this.pbxGasolina.Location = new System.Drawing.Point(12, 172);
+            this.pbxGasolina.Name = "pbxGasolina";
+            this.pbxGasolina.Size = new System.Drawing.Size(143, 141);
+            this.pbxGasolina.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxGasolina.TabIndex = 8;
+            this.pbxGasolina.TabStop = false;
+            this.pbxGasolina.Click += new System.EventHandler(this.pbxGasolina_Click);
+            // 
+            // lblConsumo
+            // 
+            this.lblConsumo.AutoSize = true;
+            this.lblConsumo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConsumo.Location = new System.Drawing.Point(8, 316);
+            this.lblConsumo.Name = "lblConsumo";
+            this.lblConsumo.Size = new System.Drawing.Size(147, 13);
+            this.lblConsumo.TabIndex = 7;
+            this.lblConsumo.Text = "Calculadora de Consumo";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(646, 342);
+            this.Controls.Add(this.pbxGasolina);
+            this.Controls.Add(this.lblConsumo);
+            this.Controls.Add(this.pbxIMC);
+            this.Controls.Add(this.lblIMC);
             this.Controls.Add(this.pbxJogo);
             this.Controls.Add(this.lblPedraPapelTesoura);
             this.Controls.Add(this.btnSair);
@@ -111,6 +163,8 @@ namespace CircodeAppsTDS06
             this.Text = "Circo de Apps";
             ((System.ComponentModel.ISupportInitialize)(this.pbxJogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCEP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxIMC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxGasolina)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +177,10 @@ namespace CircodeAppsTDS06
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.PictureBox pbxJogo;
         private System.Windows.Forms.Label lblPedraPapelTesoura;
+        private System.Windows.Forms.PictureBox pbxIMC;
+        private System.Windows.Forms.Label lblIMC;
+        private System.Windows.Forms.PictureBox pbxGasolina;
+        private System.Windows.Forms.Label lblConsumo;
     }
 }
 

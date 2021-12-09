@@ -52,6 +52,18 @@
     <Compile Include="FrmBuscaCEP.Designer.cs">
       <DependentUpon>FrmBuscaCEP.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarro.Designer.cs">
+      <DependentUpon>FrmCarro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIMC.Designer.cs">
+      <DependentUpon>FrmIMC.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmJogo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +80,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmBuscaCEP.resx">
       <DependentUpon>FrmBuscaCEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCarro.resx">
+      <DependentUpon>FrmCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIMC.resx">
+      <DependentUpon>FrmIMC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmJogo.resx">
       <DependentUpon>FrmJogo.cs</DependentUpon>
